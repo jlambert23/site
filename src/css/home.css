@@ -1,0 +1,99 @@
+:root {
+  --primary-bg: #282c34;
+  --secondary-bg: #3a3f47;
+  --red: #ff5f56;
+  --yellow: #ffbd2e;
+  --green: #27c93f;
+}
+
+.terminal {
+  width: 991px;
+  height: 575px;
+  padding: 1rem;
+
+  font-size: 1.2rem;
+  font-family: 'Fira Code', monospace;
+  background: var(--primary-bg);
+  box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 9px;
+}
+
+header {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: var(--secondary-bg) 2px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: var(--lightgray);
+  }
+  50% {
+    border-color: transparent;
+  }
+  to {
+    border-color: var(--lightgray);
+  }
+}
+
+.welcome {
+  display: inline-block;
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 1px solid var(--lightgray);
+  padding-right: 0.2rem;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1.5s steps(17) forwards, blink 1.5s infinite;
+}
+
+.btn {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.red {
+  background: var(--red);
+}
+.yellow {
+  background: var(--yellow);
+}
+.green {
+  background: var(--green);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+figure {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.options {
+  margin: 2.5rem 2rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 4.5rem;
+}

@@ -22,8 +22,5 @@ body {
   background-color: var(--darkgray);
 }
 body {
-  padding: 0 1rem;
-}
-main :first-child {
-  width: 50%;
+  padding: 1rem;
 }

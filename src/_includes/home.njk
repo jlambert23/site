@@ -1,0 +1,31 @@
+---
+layout: base.njk
+title: Justin's Website 🤙
+stylesheet: /css/home.css
+---
+<div class='terminal'>
+  <header>
+    <div class='btn red'></div>
+    <div class='btn yellow'></div>
+    <div class='btn green'></div>
+  </header>
+  <main>
+    <section class='welcome'>
+      <div class='typed-out'>> node welcome.js</div>
+    </section>
+    <section class='content'>
+      <div class='options'>
+        <h1>&lt;/&gt; Justin Lambert</h1>
+        <nav>
+          <a>Home</a>
+          <a>About</a>
+          <a>Work</a>
+          <a>Conatact</a>
+        </nav>
+      </div>
+      <figure>
+        {% include 'profile.html' %}
+      </figure>
+    </section>
+  </main>
+</div>

@@ -3,17 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    
+    <title>{{ title or metadata.title }}</title>
     <link rel="stylesheet" href="/css/index.css">
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css">
+    {%if stylesheet %}
+    <link rel="stylesheet" href={{ stylesheet }}>
+    {%endif%}
   </head>
   <body>
-    <header>
-      <h1>{{ title }}</h1>
-    </header>
-    <main>
       {{ content | safe }}
-    </main>
   </body>
 </html>
