@@ -6,6 +6,13 @@
   --navy: #17050f;
   --blue: #082840;
   --white: #fff;
+
+  /* home colors */
+  --primary-bg: #282c34;
+  --secondary-bg: #3a3f47;
+  --red: #ff5f56;
+  --yellow: #ffbd2e;
+  --green: #27c93f;
 }
 
 /* Global stylesheet */

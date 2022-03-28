@@ -1,7 +1,8 @@
 ---
-layout: base.njk
+layout: layouts/base.njk
 title: Justin's Website 🤙
-stylesheet: /css/home.css
+scripts:
+  - scripts/typer.js
 ---
 <div class='terminal'>
   <header>
@@ -11,20 +12,20 @@ stylesheet: /css/home.css
   </header>
   <main>
     <section class='welcome'>
-      <div class='typed-out'>> node welcome.js</div>
+      {% renderFile 'src/_includes/components/typer.html' %}
     </section>
     <section class='content'>
       <div class='options'>
         <h1>&lt;/&gt; Justin Lambert</h1>
         <nav>
-          <a>Home</a>
-          <a>About</a>
-          <a>Work</a>
-          <a>Conatact</a>
+          <a>🏠 Home</a>
+          <a>🧑🏻‍💻 About</a>
+          <a>💻 Work</a>
+          <a>📱 Contact</a>
         </nav>
       </div>
       <figure>
-        {% include 'profile.html' %}
+        {% renderFile 'src/_includes/components/profile.html' %}
       </figure>
     </section>
   </main>

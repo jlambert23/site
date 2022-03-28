@@ -1,11 +1,3 @@
-:root {
-  --primary-bg: #282c34;
-  --secondary-bg: #3a3f47;
-  --red: #ff5f56;
-  --yellow: #ffbd2e;
-  --green: #27c93f;
-}
-
 .terminal {
   width: 991px;
   height: 575px;
@@ -26,37 +18,8 @@ header {
   border-bottom: var(--secondary-bg) 2px solid;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink {
-  from {
-    border-color: var(--lightgray);
-  }
-  50% {
-    border-color: transparent;
-  }
-  to {
-    border-color: var(--lightgray);
-  }
-}
-
 .welcome {
   display: inline-block;
-}
-
-.typed-out {
-  overflow: hidden;
-  border-right: 1px solid var(--lightgray);
-  padding-right: 0.2rem;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 1.5s steps(17) forwards, blink 1.5s infinite;
 }
 
 .btn {

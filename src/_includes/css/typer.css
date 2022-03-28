@@ -1,0 +1,26 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: var(--lightgray);
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 1px solid var(--lightgray);
+  padding-right: 0.2rem;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1.5s steps(17) forwards, blink 1.5s infinite;
+}

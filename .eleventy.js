@@ -5,8 +5,12 @@ const markdownItEmoji = require('markdown-it-emoji');
 
 module.exports = function (config) {
   // css
-  config.addPassthroughCopy('./src/css');
-  config.addWatchTarget('./src/css/');
+  // config.addPassthroughCopy('./src/**/*.css');
+  config.addWatchTarget('./src/**/*.css/');
+
+  // js
+  config.addPassthroughCopy('./src/scripts');
+  config.addWatchTarget('./src/scripts');
 
   // plugins
   config.addPlugin(EleventyRenderPlugin);
